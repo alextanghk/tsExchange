@@ -6,7 +6,7 @@
   "scripts": {
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
     "build": "tsc",
-    "start": "ENV_FILE=./.env/dev nodemon ./src/index.ts",
+    "start": "NODE_ENV=dev nodemon ./src/index.ts",
     "test": "ENV_FILE=./.env.test jest --maxWorkers=1 --detectOpenHandles"
   },
   "author": "",

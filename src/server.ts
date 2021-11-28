@@ -8,7 +8,7 @@ const app = express();
 
 app.use(bodyParser.json());
 
-app.use("api", routes);
+app.use("/test", routes);
 
 app.get("/",(req, res)=> {
     res.send("Server running");
